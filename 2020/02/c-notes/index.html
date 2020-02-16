@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>Kana&#39;s Space</title>
+  <title>关于c的小笔记（c notes） - Kana&#39;s Space</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,16 +12,20 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Kana&#39;s Space">
-<meta property="og:url" content="http://kanadesu.moe/index.html">
+  <meta name="description" content="最近在用c做个小项目，把碰到的问题做个小笔记，方便以后查询。 解决编译后的黑屏闪烁   在最后return 0之前加一行system(&quot;pause&quot;)    在库文件加入#include &lt;stdlib.h&gt; c&#x2F;c++中的相对路径和绝对路径相对路径：用正斜杠‘&#x2F;’.&#x2F;    表示当前路径，相当于E:\test\file ..&#x2F;  表示当前路径的上一级路径，相当于E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于c的小笔记（c notes）">
+<meta property="og:url" content="http://kanadesu.moe/2020/02/c-notes/index.html">
 <meta property="og:site_name" content="Kana&#39;s Space">
+<meta property="og:description" content="最近在用c做个小项目，把碰到的问题做个小笔记，方便以后查询。 解决编译后的黑屏闪烁   在最后return 0之前加一行system(&quot;pause&quot;)    在库文件加入#include &lt;stdlib.h&gt; c&#x2F;c++中的相对路径和绝对路径相对路径：用正斜杠‘&#x2F;’.&#x2F;    表示当前路径，相当于E:\test\file ..&#x2F;  表示当前路径的上一级路径，相当于E">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-16T01:27:18.000Z">
+<meta property="article:modified_time" content="2020-02-16T02:28:07.359Z">
 <meta property="article:author" content="Kana">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581820093312">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1581820093295">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -106,27 +110,36 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <section class="nexmoe-posts">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 24.009508716323296%;"> 
+          <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="关于c的小笔记（c notes）" class="lazyload">
+          <h1>关于c的小笔记（c notes）</h1>
+      </div>
+  
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月16日</a>
+    <a><i class="nexmoefont icon-areachart"></i>834 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
     
-    <div class="nexmoe-post">
-        <a href="/2020/02/c-notes/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.009508716323296%;"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="关于c的小笔记（c notes）" class="lazyload">
-                    <h1>关于c的小笔记（c notes）</h1>
-                </div>
-            
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月16日</a>
-            <a><i class="nexmoefont icon-areachart"></i>834 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
-            
-            
+    
+    
+  </div>
+
+  <div class="nexmoe-post-right">
+    
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#解决编译后的黑屏闪烁"><span class="toc-number">1.</span> <span class="toc-text">解决编译后的黑屏闪烁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-c-中的相对路径和绝对路径"><span class="toc-number">2.</span> <span class="toc-text">c&#x2F;c++中的相对路径和绝对路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文件写入操作"><span class="toc-number">3.</span> <span class="toc-text">文件写入操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-排序"><span class="toc-number">4.</span> <span class="toc-text">c++排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开大数组溢出问题"><span class="toc-number">5.</span> <span class="toc-text">开大数组溢出问题</span></a></li></ol>
+            </div>
         </div>
-        <article>
-            
-                <p>最近在用c做个小项目，把碰到的问题做个小笔记，方便以后查询。</p>
+      </div>
+    
+  </div>
+
+  <article>
+    <p>最近在用c做个小项目，把碰到的问题做个小笔记，方便以后查询。</p>
 <h2 id="解决编译后的黑屏闪烁"><a href="#解决编译后的黑屏闪烁" class="headerlink" title="解决编译后的黑屏闪烁"></a>解决编译后的黑屏闪烁</h2><p>   在最后return 0之前加一行<code>system(&quot;pause&quot;)</code></p>
 <p>   在库文件加入<code>#include &lt;stdlib.h&gt;</code></p>
 <h2 id="c-c-中的相对路径和绝对路径"><a href="#c-c-中的相对路径和绝对路径" class="headerlink" title="c/c++中的相对路径和绝对路径"></a>c/c++中的相对路径和绝对路径</h2><p><strong>相对路径</strong>：用正斜杠‘/’<br>./    表示当前路径，相当于E:\test\file</p>
@@ -188,141 +201,38 @@ if(arr==NULL)                                       //每次使用malloc命令�
     printf(&quot;内存分配失败&quot;)；
 }</code></pre><p>待续。。。</p>
 
-            
-        </article>
-    </div>
+  </article>
+  
     
-    <div class="nexmoe-post">
-        <a href="/2020/02/osu-related/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.009508716323296%;"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="osu related" class="lazyload">
-                    <h1>osu related</h1>
-                </div>
-            
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>8 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-                <p><strong>置顶</strong></p>
-<p><a href="https://b7.sayobot.cn:25225/maps/RankedMapsDownloaderV2.6.exe" target="_blank" rel="noopener">ranked map downloader</a>,<br><a href="https://1drv.ms/u/s!Auy5NF_Cz0MGjQGf9b-2YLo49TKw?e=GhY2DM" target="_blank" rel="noopener">skin</a>,<br><a href="https://1drv.ms/u/s!Auy5NF_Cz0MGjQOWh3o21oP2EeFE?e=vdo2SY" target="_blank" rel="noopener">HScopier</a>,<br><a href="https://1drv.ms/u/s!Auy5NF_Cz0MGjQJQHg6bvT7Gi9We?e=7HMubm" target="_blank" rel="noopener">TabletDriver</a></p>
-<p><img data-sizes="auto" data-src="https://i.loli.net/2020/02/15/p7inH9XTJfCbj2t.jpg" alt="" class="lazyload"></p>
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>Kana<br>
+<strong>本文链接：</strong><a href="http://kanadesu.moe/2020/02/c-notes/" title="http:&#x2F;&#x2F;kanadesu.moe&#x2F;2020&#x2F;02&#x2F;c-notes&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;kanadesu.moe&#x2F;2020&#x2F;02&#x2F;c-notes&#x2F;</a><br>
 
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2020/02/reminder/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.009508716323296%;"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="备忘" class="lazyload">
-                    <h1>备忘</h1>
-                </div>
-            
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>33 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-                <p><strong>置顶</strong><br>hexo文件操作<br>g打包 s调试<br>d上传</p>
-<p><a href="https://leancloud.cn/dashboard/" target="_blank" rel="noopener">leancloud</a>,<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo帮助文档</a>,<br><a href="https://www.jianshu.com/p/ca87dd7b9e00" target="_blank" rel="noopener">搬家</a>,<br><a href="https://www.jianshu.com/p/1745a7f53404" target="_blank" rel="noopener">md editer</a>,<br><a href="https://blog.csdn.net/qwerty200696/article/details/79010629" target="_blank" rel="noopener">置顶tag添加</a>,<br><a href="https://www.jianshu.com/p/cc0649e7c79d" target="_blank" rel="noopener">markdown语法</a></p>
-<p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">reference</a></p>
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2020/02/about/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.009508716323296%;"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="关于我" class="lazyload">
-                    <h1>关于我</h1>
-                </div>
-            
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>32 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-                <p>只是一个刚入门博客的萌新，兼职音游狗，osu mapper。<br>嘿嘿嘿 其他有想到的以后再补</p>
+</div>
 
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2020/02/osu/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.009508716323296%;"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="osu profile" class="lazyload">
-                    <h1>osu profile</h1>
-                </div>
-            
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>10 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-                <p><a href="https://osu.ppy.sh/users/2345298" target="_blank" rel="noopener">here</a><br>欢迎来加好友一起玩111</p>
 
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2020/02/wdnmd/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.009508716323296%;"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="我带你们打" class="lazyload">
-                    <h1>我带你们打</h1>
-                </div>
-            
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-                <p>asdfgh</p>
-
-            
-        </article>
-    </div>
-    
+  
+  <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: '9Od2ao9oJyfDNCWoyvkohLYJ-gzGzoHsz',
+        appKey: 'vijCtEoPz2jcKANlj4PTLkJx'
+    })
+</script>
 </section>
-
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581820093313"></script>-->
+<!--<script src="/js/app.js?v=1581820093297"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
