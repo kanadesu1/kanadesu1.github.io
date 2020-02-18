@@ -19,9 +19,9 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Kana">
 <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581995770638">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1581996576117">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -32,7 +32,7 @@
     <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg)"></div>
     <div class="mdui-appbar mdui-shadow-0">
       <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu">menu</i></a>
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
         <div class="mdui-toolbar-spacer"></div>
         <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
         <a href="/" title="Kana" class="mdui-btn mdui-btn-icon"><img src="https://i.loli.net/2020/02/15/1CkuUQDs9qVLJF3.jpg" alt="Kana"></a>
@@ -57,6 +57,13 @@
             <i class="mdui-list-item-icon nexmoefont icon-home"></i>
             <div class="mdui-list-item-content">
                 回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
             </div>
         </a>
         
@@ -134,12 +141,33 @@
   
   
   <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <h3 class="nexmoe-widget-title">最新文章</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+      <ul>
+        
+          <li>
+            <a href="/2020/02/c-notes/">关于c的小笔记（c notes）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/osu-related/">osu related</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/reminder/">备忘</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/about/">关于我</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/osu/">osu profile</a>
+          </li>
+        
+      </ul>
     </div>
   </div>
-
 
   
 </aside>
@@ -152,43 +180,73 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <style>
-    #nexmoe-content .nexmoe-archives .nexmoe-post .nexmoe-post-cover {
-        max-height: 75px;
-    }
-</style>
+        
 <section class="nexmoe-archives">
-    
-    <div class="nexmoe-post">
-        <a href="/2020/02/osu-related/">
+
+    <article>
+        
+
+        
+            <h2>2020</h2>
+            <ul>
             
-                <div class="nexmoe-post-cover mdui-ripple"> 
-                    <img data-src="https://i.loli.net/2020/02/15/BXGjwPxMFaIcEv9.jpg" data-sizes="auto" alt="osu related" class="lazyload">
-                    <h1>osu related</h1>
-                </div>
+                <li><span>02-15</span><a href="/2020/02/osu-related/" >osu related</a></li>
             
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>8 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/osu/" rel="tag">osu</a>
-            
-        </div>
-        <div style="height: 50px;"></div>
-    </div>
-    
+            </ul>
+        
+    </article>
 </section>
 
+<style>
+.nexmoe-archives article > *:first-child {
+    margin-top: 0;
+}
+.nexmoe-archives article > *:last-child {
+    margin-bottom: 0;
+}
+.nexmoe-archives ul {
+    list-style: none;
+    padding-left: 0!important;
+}
+.nexmoe-archives li {
+    position: relative;
+    padding: 10px 0;
+}
+.nexmoe-archives li::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #ff4e6a;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 11px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    z-index: 100;
+    position: relative;
+}
+.nexmoe-archives li::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: rgba(255, 78, 106, 0.2);
+    position: absolute;
+    left: 6px;
+    top: 20px;
+}
+.nexmoe-archives li:last-child:after {
+    display: none;
+}
+.nexmoe-archives span {
+    margin-right: 15px;
+}
+</style>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581995770639"></script>-->
+<!--<script src="/js/app.js?v=1581996576118"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
