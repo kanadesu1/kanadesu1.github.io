@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581996576109">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1581999533341">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -307,15 +307,35 @@ if(arr==NULL)                                       //每次使用malloc命令�
 
         <div class="nexmoe-post-meta">
             <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月15日</a>
-            <a><i class="nexmoefont icon-areachart"></i>33 字</a>
+            <a><i class="nexmoefont icon-areachart"></i>358 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
 
         <article>
             
                 <p><strong>置顶</strong><br>hexo文件操作<br>g打包 s调试<br>d上传</p>
-<p><a href="https://leancloud.cn/dashboard/" target="_blank" rel="noopener">leancloud</a>,<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo帮助文档</a>,<br><a href="https://www.jianshu.com/p/ca87dd7b9e00" target="_blank" rel="noopener">搬家</a>,<br><a href="https://www.jianshu.com/p/1745a7f53404" target="_blank" rel="noopener">md editer</a>,<br><a href="https://blog.csdn.net/qwerty200696/article/details/79010629" target="_blank" rel="noopener">置顶tag添加</a>,<br><a href="https://www.jianshu.com/p/cc0649e7c79d" target="_blank" rel="noopener">markdown语法</a></p>
-<p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">reference</a></p>
+<p><a href="https://leancloud.cn/dashboard/" target="_blank" rel="noopener">leancloud</a>,<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo帮助文档</a>,<br><a href="https://www.jianshu.com/p/ca87dd7b9e00" target="_blank" rel="noopener">搬家</a>,<br><a href="https://www.jianshu.com/p/1745a7f53404" target="_blank" rel="noopener">md editer</a>,<br><a href="https://blog.csdn.net/qwerty200696/article/details/79010629" target="_blank" rel="noopener">置顶tag添加</a>,<br><a href="https://www.jianshu.com/p/cc0649e7c79d" target="_blank" rel="noopener">markdown语法</a>,<br>有道云笔记</p>
+<h2 id="hexo搬家"><a href="#hexo搬家" class="headerlink" title="hexo搬家"></a>hexo搬家</h2><h4 id="将Hexo博客文件夹内如下文件打包复制"><a href="#将Hexo博客文件夹内如下文件打包复制" class="headerlink" title="将Hexo博客文件夹内如下文件打包复制"></a>将Hexo博客文件夹内如下文件打包复制</h4><pre><code>scaffolds            文章模版                           必须备份
+source               博客文章                           必须备份
+themes               主题                               必须备份
+.gitignore           限定在push时那些文件可以忽略       必须备份
+_config.yml          站点配置文件                       必须备份
+package.json         安装包的名称                       必须备份
+.ssh                 密钥文件                           必须备份</code></pre><h4 id="将C-Users-kana-ssh中的密钥文件复制"><a href="#将C-Users-kana-ssh中的密钥文件复制" class="headerlink" title="将C:\Users\kana\.ssh中的密钥文件复制"></a>将<code>C:\Users\kana\.ssh</code>中的密钥文件复制</h4><h4 id="安装配置Hexo"><a href="#安装配置Hexo" class="headerlink" title="安装配置Hexo"></a>安装配置Hexo</h4><p>用之前的套路安装 Node.js 环境 Git 环境</p>
+<p>进入 blog 文件夹，右键git bash here，安装 Hexo <code>npm install -g hexo</code></p>
+<p>初始化 Hexo <code>hexo init</code></p>
+<p>安装依赖包 <code>npm install</code></p>
+<p>上面的命令执行完了，你的博客目录会生成新的hexo博客文件，我们把刚才拷贝过来的文件，替换掉新生成的 博客文件，然后在复制 密钥文件 到<code>C:\Users\kana\.ssh</code></p>
+<p>初始化git本地仓库 <code>git init</code></p>
+<p>安装上传插件 <code>npm install hexo-deployer-git --save</code></p>
+<p>RSS插件 <code>npm install hexo-generator-feed</code></p>
+<p>字数统计 阅读时长 插件 <code>npm i --save hexo-wordcount</code></p>
+<p>搜索插件 <code>npm install hexo-generator-searchdb --save</code></p>
+<p>如果你使用了更多的插件，在这里安装就可以了。</p>
+<p>配置Git 输入你自己的邮箱地址</p>
+<p><code>git config --global user.name &quot; &quot;</code></p>
+<p><code>git config --global user.email &quot; &quot;</code></p>
+<p><a href="https://www.jianshu.com/p/ca87dd7b9e00" target="_blank" rel="noopener">reference</a></p>
 
             
         </article>
@@ -399,7 +419,7 @@ if(arr==NULL)                                       //每次使用malloc命令�
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581996576111"></script>-->
+<!--<script src="/js/app.js?v=1581999533342"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
